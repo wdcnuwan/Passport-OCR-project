@@ -46,7 +46,25 @@ body {
     background-color: #3498db;
     color: #fff;
 }
-
+.form-check {
+    margin-top: 10px; /* Adjust this value to control the spacing */
+}
+/* Style for the checkbox */
+.form-check-input {
+    /* Add border */
+    border: 2px solid #3a3939;
+    /* Adjust size */
+    width: 18px;
+    height: 18px;
+    /* Add some padding for better spacing */
+    padding: 2px;
+    /* Customize appearance */
+    border-radius: 4px;
+}
+.custom-bg {
+    background-color: #b3dcf39f; /* Replace with your desired color */
+    /* Add more styling as needed */
+}
 /* Add more specific styles for headers, labels, and other elements as needed */
 
     </style>
@@ -144,9 +162,15 @@ body {
                 </div>
                 
                 <!-- Add similar form-group elements for other contact details -->
+                <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck">
+                      <label class="form-check-label" for="gridCheck">To proceed</label>
+                    </div>
+                  </div>
                 <div class="d-grid gap-2">
                     
-                    <button class="btn btn-outline-secondary mt-4" type="button">Save</button>
+                    <button class="btn btn-outline-secondary mt-4 custom-bg" type="button">Submit</button>
                     
                 </div>
             </div>
